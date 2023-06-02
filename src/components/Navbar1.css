@@ -1,0 +1,17 @@
+.cartClass{
+    margin-right: 20px;
+    column-gap: 5px;
+    font-size: large;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 100px;
+
+}
+
+.fa fa-sign-in me-1 cartclassName{
+    font-size: large;
+}
+.form-inline ms{
+   float:inline-end;
+}

@@ -33,7 +33,7 @@ function Navbar1() {
           <span color="black">LANE</span>
         </h1>
       </Link>
-      <div className="form-inline ">
+      <div className="form-inline ml-auto ">
         <Link className= "btn btn-success me-1">
           Cart
           <span className="badge badge-light">{numberCart}</span>

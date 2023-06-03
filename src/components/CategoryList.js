@@ -24,12 +24,14 @@ const CategoryList = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container mt-50">
       <h3 className="text-center"></h3>
       <div className="row">
-        {categories.map((category) => 
+        {
+        categories.map((category) => 
           <Category data={category} />
-        )}
+ )
+        }
       </div>
     </div>
   );

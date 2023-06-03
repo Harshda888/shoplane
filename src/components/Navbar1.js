@@ -34,7 +34,7 @@ function Navbar1() {
         </h1>
       </Link>
       <div className="form-inline ml-auto ">
-        <Link className= "btn btn-success me-1">
+        <Link className= "btn btn-secondary ">
           Cart
           <span className="badge badge-light">{numberCart}</span>
         </Link>
@@ -42,11 +42,11 @@ function Navbar1() {
 
 
         {loginStatus ? (
-          <Link onClick={onLogoutHandler} className="btn btn-danger" >
+          <Link onClick={onLogoutHandler} className="btn btn-secondary" >
             Logout
           </Link>
         ) : (
-          <Link to="/login" className="btn btn-primary">
+          <Link to="/login" className="btn btn-secondary">
             Login
           </Link>
         )}

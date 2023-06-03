@@ -4,15 +4,13 @@
     
 }
 .card-img-top{
-    font-size: large;
+    font-size: small;
 }
 .card-img-top{
-    height:300px;
+    height:250px;
     width: auto;
 }
 .bi bi-cart3{
 margin-right: 20px;
 }
-.card-img-top{
-    font-size: medium;
-}
+

@@ -10,6 +10,7 @@ import { useParams } from "react-router-dom";
  import { getNumberFromCart } from "../redux/actions/cart-actions";
 
 
+
  const ProductDetailPage = () => {
     const dispatch = useDispatch();
    const {id} = useParams();
@@ -43,14 +44,14 @@ import { useParams } from "react-router-dom";
     <>
       <Navbar1 />
       <Navbar2 />
-      <div className="container">
+      <div className="container m-5 py-2">
         <div className="wrapper">
           <div className="row">
             <div className="col-md-6">
               <img
                 src={ product.image}
                 alt=""
-                className="img-fluid"
+                className="img-fluid" width="200px"
               />
             </div>
             <div className="col-md-6">
@@ -69,12 +70,14 @@ import { useParams } from "react-router-dom";
                   }}
                 ></span>
               </h3>
-              <button onClick={ onClickHandler } className="btn btn-primary">
+              
+              <button onClick={ onClickHandler } className="btn btn-primary" >
                 Add To Cart
               </button>
               <button onClick={ onChange } className="btn btn-primary">
                 Remove
               </button>
+    
             </div>
           </div>
         </div>
@@ -83,3 +86,9 @@ import { useParams } from "react-router-dom";
   );
                 }
 export default ProductDetailPage;
+
+
+
+
+
+  

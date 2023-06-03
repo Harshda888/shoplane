@@ -119,7 +119,7 @@ const RegisterPage = () => {
               <div className="form-group">
                 <label htmlFor="">password</label>
                 <input
-                  type="text"
+                  type="password"
                   className={
                     formik.touched.password && formik.errors.password
                       ? "form-control is-invalid"
@@ -141,7 +141,7 @@ const RegisterPage = () => {
               <div className="form-group">
                 <label htmlFor="">Confirm_Password</label>
                 <input
-                  type="confirm_password"
+                  type="password"
                   className={
                     formik.touched.confirm_password && formik.errors.confirm_password
                       ? "form-control is-invalid"
@@ -183,58 +183,3 @@ export default RegisterPage;
 
 
 
-{/* <div className="modal">
-    <div className="modal-container">
-        <h1 className="modal-left">Sign Up</h1>
-    <form>
-        <div className="input-block">
-            <label htmlFor="name" className="input-label">
-              Name
-                </label>
-                <input type="name" autoComplete="off" name="name" id="name" placeholder="Name"/>
-                </div>
-                
-                <div className="input-block">
-            <label htmlFor="email" className="input-label">
-              Email
-                </label>
-                <input type="email" autoComplete="off" name="email" id="name" placeholder="email"/>
-                </div>
-
-                <div className="input-block">
-            <label htmlFor="password" className="input-label">
-              Password
-                </label>
-                <input type="password" autoComplete="off" name="password" id="password" placeholder="password"/>
-                </div>
-                
-
-                <div className="input-block">
-            <label htmlFor="confirm_password" className="input-label">
-              Confirm Password
-                </label>
-                <input type="confirm_password" autoComplete="off" name="confirm_password" id="confirm_password" placeholder="confirm-password"/>
-                </div>
-
-
-              <div className="modal-buttons">
-                <button className="input-button" type="submit">
-                    Registration
-                </button>
-                </div>
-                </form>   
-           <p className="sign-up">
-            Allready have an account? <a href="sign in">
-                </a></p>    
-
-
-
-
-
-
-                
-        
-
-
-    </div>
-</div> */}

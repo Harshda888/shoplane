@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import Endpoints from "../api/Endpoints";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   const [requestResponse, setRequestResponse] = useState({
@@ -104,12 +105,13 @@ const LoginPage = () => {
                         )}
                       </ErrorMessage>
                     </div>
-                    
+                    <Link className="nav-links" to ="/">
                     <Field
                       type="submit"
                       value="Login"
                       className="btn btn-primary btn-block"
                     />
+                    </Link>
                   
                   </Form>
                 );
